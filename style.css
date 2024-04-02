@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: glr;
+    src: url(consola_mono/ConsolaMono-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: glr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #4d6c57;
+    background-color: #cfffdd;
+    transition: background-color 0.5s ease;
+    padding: 30px;
+}
+
+h1 {
+  
+    text-align: center;
+    font-size: 40px;
+margin: 60px;
+}
+
+
+.numero{
+    text-align: center;
+}
+
+.btn{
+    margin-right: 40px;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #ff1f4c;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.toggle-label:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #c4929c;
+    transform: translate(1px, 1px);
+}
+
+.toggle-btn:checked+.toggle-label {
+    background-color: #b4dec1;
+}
+
+.toggle-btn:checked+.toggle-label:before {
+    background-color: #8bba99;
+    transform: translate(31px, 1px);
+
+}
+
+.toggle-btn {
+    display: none;
+}
+
+.dark-mode {
+    background-color: #ff1f4c;
+}
+
+.dark-mode .numero {
+    color: #c4929c;
+}
+
+.dark-mode footer{
+
+    color: #c4929c;
+}
+
+footer {
+    left: 35vw;
+    position: absolute;
+    bottom: 0;
+    color: #4d6c57;
+}
